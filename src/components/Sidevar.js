@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../css/sb-admin-2.css';
 
 const Sidevar = () => {
     return (
@@ -84,6 +85,7 @@ const Sidevar = () => {
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></a>
                 </li>
+
             </ul>
         </div>
     )

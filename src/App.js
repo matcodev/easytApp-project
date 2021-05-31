@@ -8,7 +8,7 @@ function App() {
       <Sidevar />
       <switch>
         <Route>
-          
+
         </Route>
       </switch>
     </BrowserRouter>
