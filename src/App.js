@@ -1,9 +1,17 @@
+import { BrowserRouter, Route } from "react-router-dom";
+import Sidevar from "./components/Sidevar";
+
 
 function App() {
   return (
-    <div className="text-center">
-     <h1>hello</h1>
-    </div>
+    <BrowserRouter>
+      <Sidevar />
+      <switch>
+        <Route>
+          
+        </Route>
+      </switch>
+    </BrowserRouter>
   );
 }
 
