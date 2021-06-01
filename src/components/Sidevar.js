@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import '../css/sb-admin-2.css';
 
 const Sidevar = () => {
     return (
@@ -16,12 +15,11 @@ const Sidevar = () => {
                 <li className="nav-item active">
                     <Link className="nav-link" to="index.html">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></Link>
+                        <span>Dashboard</span>
+                    </Link>
                 </li>
                 <hr className="sidebar-divider" />
-                <div className="sidebar-heading">
-                    
-            </div>
+                <div className="sidebar-heading"></div>
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="true" aria-controls="collapseTwo">
