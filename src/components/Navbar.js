@@ -17,7 +17,7 @@ const Navbar = () => {
                 </h5>
             </div>
             <div className="col-md-2 d-flex justify-content-center">
-                <img src={maty_profile2} alt="no image" className="imgProfile" />
+                <img src={maty_profile2} alt="noImage" className="imgProfile" />
                 <ul className="nav-item dropdown float-end">
                     <a className="nav-link dropdown-toggle text-secondary" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Matías Espinoza
