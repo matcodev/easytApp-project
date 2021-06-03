@@ -10,7 +10,7 @@ const PieChartSales = () => {
     ];
 
     return (
-        <div className="container-fluid col-md-6">
+        <div className="container-fluid col-md-12">
             <PieChart width={400} height={400}>
                 <Pie
                     dataKey="value"

@@ -1,4 +1,4 @@
-import { LineChart, Line, CartesianGrid, XAxis, YAxis} from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip} from 'recharts';
 
 const SalesChart = () => {
     const data = [
@@ -20,6 +20,7 @@ const SalesChart = () => {
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="name" />
                     <YAxis dataKey="value" />
+                    <Tooltip />
                 </LineChart>
             </div>
     );
