@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import Calendar from "./pages/Calendar";
 import Networks from "./pages/Networks";
+import injectContext from "./store/appContext";
 
 
 function App() {
@@ -32,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default injectContext(App);
