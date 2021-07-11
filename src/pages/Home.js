@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Badge from "react-bootstrap/Badge";
-import Jumbotron from "react-bootstrap/Jumbotron";
+// import Badge from "react-bootstrap/Badge";
+// import Jumbotron from "react-bootstrap/Jumbotron";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import swal from 'sweetalert';
+import { useContext } from "react";
+import { Context } from "../store/appContext";
 
 
 
@@ -18,6 +20,7 @@ import { render } from "react-dom";
 
 const Home = () => {
   React.state = { fecha: new Date() };
+  const {store, actions} = useContext(Context)
 
 
 const mostrar = () =>{
@@ -39,7 +42,7 @@ const mostrar = () =>{
         <DatePicker selected={React.state.fecha} />{" "}
         {/* onChange={React.setState.onChange}  */}
       </div>
-        <div className="titulo h1">Agenda de Hoy </div>
+        <div className="titulo h1">Agenda de Hoy {`${store.name} ${store.lastname}`} </div>
 
       <Row className="top justify-content-md-center">
         <Col xl={5} className="mt-5">
