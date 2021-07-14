@@ -7,26 +7,25 @@ import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import Calendar from "./pages/Calendar";
 import Networks from "./pages/Networks";
+import Login from "./pages/Login";
 
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className="flex">
-        <Sidebar />
-        <div className="content">
-          <Route path="/Home" exact={true} component={Home} />
-          <Route path="/Calendar" exact={true} component={Calendar} />
-          <Route path="/Sales" exact={true} component={Sales} />
-          <Route path="/Clients" exact={true} component={Clients} />
-          <Route path="/Networks" exact={true} component={Networks} />
-        </div>
-      </div>
       <switch>
-        <Route>
+        <Navbar />
+        <div className="flex">
+          <Sidebar />
+          <div className="content">
+            <Route path="/Home" exact={true} component={Home} />
+            <Route path="/Calendar" exact={true} component={Calendar} />
+            <Route path="/Sales" exact={true} component={Sales} />
+            <Route path="/Clients" exact={true} component={Clients} />
+            <Route path="/Networks" exact={true} component={Networks} />
+          </div>
+        </div>
 
-        </Route>
       </switch>
     </BrowserRouter>
   );
