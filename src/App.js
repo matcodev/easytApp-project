@@ -10,25 +10,26 @@ import Networks from "./pages/Networks";
 import injectContext from "./store/appContext";
 import MasterRoute from "./layouts/master_layout";
 import Login from "./pages/Login";
+import SignUp from "./pages/Signup";
 
 
 function App() {
   return (
     <div>
     <BrowserRouter>
-      <Navbar />
+    <MasterRoute component={Navbar} />
       <switch>
       <div className="flex">
-        <Sidebar />
+      <MasterRoute component={Sidebar} />
         <div className="content">
           
-          <MasterRoute path="/Home" exact={true} component={Home} />
-          <MasterRoute path="/Calendar" exact={true} component={Calendar} />
-          <MasterRoute path="/Sales" exact={true} component={Sales} />
-          <MasterRoute path="/Clients" exact={true} component={Clients} />
-          <Route path="/" exact={true} component={Networks} />
-          {/* <MasterRoute path="/Perfil" exact={true} component={Perfil} /> */}
-          <Route path="/Login" exact={true} component={Login} />
+          <MasterRoute path="/home" exact={true} component={Home} />
+          <MasterRoute path="/calendar" exact={true} component={Calendar} />
+          <MasterRoute path="/sales" exact={true} component={Sales} />
+          <MasterRoute path="/clients" exact={true} component={Clients} />
+          <MasterRoute path="/networks" exact={true} component={Networks} />
+          <Route path="/signup" exact={true} component={SignUp} />
+          <Route path="/" exact={true} component={Login} />
         </div>
       </div>
       </switch>

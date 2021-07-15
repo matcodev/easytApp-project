@@ -10,6 +10,7 @@ const getState = ({ getStore, getActions, setStore }) => {
                 { id: 4, name: 'D' },
             ],
             username: '',
+            email:'',
             password: '',
             currentUser: null,
             path: 'http://localhost:3000',
@@ -19,7 +20,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         },
         
         actions:{
-            saludar: () => (alert(getStore().name + " " + getStore().lastname)),
+            saludar: () => console.log(getStore().name + " " + getStore().lastname),
 
             getUsers: async () => {
                 const resp = await fetch('https:jsonplaceholder.typicode.com/users')
@@ -55,16 +56,23 @@ const getState = ({ getStore, getActions, setStore }) => {
                         } else {
                             const aut= {
                                 currentUser: data,
-                                username: '',
+                               /*  username: '',
                                 password: '',
-                                errors: null
+                                errors: null */
                             }
                             localStorage.setItem("auth", JSON.stringify(aut))
                             setStore({...aut})
-                            history.push("/");
+                            history.push("/home");
                         }
                     })
             },
+            logout: (history) => {
+                setStore({
+                  currentUser: null,
+                  });
+               localStorage.clear();   
+                history.push("/login");
+              },
             revalidate: user =>{
                 // console.log(user, {...user}, "soy redirect")
                 setStore({

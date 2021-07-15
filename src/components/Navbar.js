@@ -1,10 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Context } from "../store/appContext";
 import maty_profile2 from '../assets/img/maty_profile2.jpeg';
+import Button from "../components/Button";
+
 
 const Navbar = () => {
-    const { store } = useContext(Context);
+    const { store, actions } = useContext(Context);
+
+    const history = useHistory()
 
     return (
         
@@ -21,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className="icon-notification col-md-6 d-flex align-items-center justify-content-end">
                 <h5 className="float-end me-4">
-                    <i className="fas fa-bell text-secondary" />
+                  <button><Button>  <i className="fas fa-bell text-secondary" /></Button></button>
                     <i className="fas fa-envelope text-secondary mx-4" />
                 </h5>
             </div>
@@ -35,7 +39,7 @@ const Navbar = () => {
                         <li><a className="dropdown-item" href="/Perfil"><i className="fas fa-user me-2"/>Perfil</a></li>
                         <li><a className="dropdown-item" href="/#"><i className="fas fa-cog me-2"/>Configuraciones</a></li>
                         <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="/#"><i className="fas fa-sign-out-alt me-2"/>Log Out</a></li>
+                        <li><button className="dropdown-item"  onClick={() => actions.logout(history)}><i className="fas fa-sign-out-alt me-2"/>Log Out </button></li>
                     </ul>
                 </ul>
             </div>
