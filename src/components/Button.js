@@ -3,7 +3,7 @@ import React from 'react';
 const Button = () => {
     return (
         <>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" className="btn btn-darck" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Agendar cita
             </button>
 
