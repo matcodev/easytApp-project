@@ -5,6 +5,7 @@ import '@popperjs/core';
 import 'bootstrap';
 import '@fortawesome/fontawesome-free';
 import App from './App';
+import "../src/css/App.css"
 
 ReactDOM.render(
   <React.StrictMode>
