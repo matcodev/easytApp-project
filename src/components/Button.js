@@ -57,7 +57,7 @@ const Button = () => {
                                     </select>
                                 </div>
                                 <div className="col-6">
-                                    <label for="inputAddress2" className="form-label">Codigo de amigo</label>
+                                    <label for="inputAddress2" className="form-label">Código de amigo</label>
                                     <input type="text" className="form-control" id="" placeholder="" />
                                 </div>
                                 <div className="col-12">

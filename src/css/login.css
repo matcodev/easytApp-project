@@ -34,7 +34,7 @@
   }
   
   input {
-  text-align: center;
+  /* text-align: center; */
   background-color: #ECF0F1;
   border: 2px solid transparent;
   border-radius: 3px;
@@ -50,7 +50,7 @@
   box-shadow: none;
   }
   
-  .btn {
+  /* .btn {
     border: 2px solid transparent;
     background: #3498DB;
     color: #ffffff;
@@ -65,12 +65,12 @@
     display: block;
     width: 250px;
     margin: 0 auto;
-  }
+  } */
 
   
-  .btn:hover {
+  /* .btn:hover {
     background-color: #2980B9;
-  }
+  } */
   
   .login-link {
     font-size: 20px;

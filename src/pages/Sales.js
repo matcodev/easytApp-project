@@ -7,12 +7,12 @@ const Sales = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h1 className="pt-4">Ingresos</h1>
-      <div className="charts-sales mx-5 p-5">
-        <div className="card me-5 p-5">
+      <div className="charts-sales">
+        <div className="card">
           <SalesChart />
         </div>
-        <div className="card me-4 px-3">
-          <PieChartSales />
+        <div className="card">
+          {/* <PieChartSales /> */}
         </div>
       </div>
     </div>
