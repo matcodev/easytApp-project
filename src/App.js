@@ -11,6 +11,7 @@ import injectContext from "./store/appContext";
 import MasterRoute from "./layouts/master_layout";
 import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
+import Perfil from "./pages/Perfil";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <MasterRoute path="/sales" exact={true} component={Sales} />
           <MasterRoute path="/clients" exact={true} component={Clients} />
           <MasterRoute path="/networks" exact={true} component={Networks} />
+          <MasterRoute path="/perfil" exact={true} component={Perfil} />
           <Route path="/signup" exact={true} component={SignUp} />
           <Route path="/" exact={true} component={Login} />
         </div>

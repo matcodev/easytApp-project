@@ -8,12 +8,6 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li>
-          <Link to="/" className="btn btn-secondary w-100 rounded-pill mt-3">
-            <i className="fas fa-network-wired me-2" />
-            Mis Redes
-          </Link>
-        </li>
         {store.currentUser !== null ? (
             <>
 <li>
@@ -45,6 +39,12 @@ const Sidebar = () => {
             </>
             
         ) : null }
+        <li>
+          <Link to="/networks" className="btn btn-secondary w-100 rounded-pill mt-3">
+            <i className="fas fa-network-wired me-2" />
+            Mis Redes
+          </Link>
+        </li>
         <li>
           <Link
             to="/Login"
