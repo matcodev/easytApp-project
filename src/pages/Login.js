@@ -30,7 +30,7 @@ const Login = props => {
                         </div>
 
                         <div className="control-group">
-                            <input className="form-control" type="password"  id="email" name="password" placeholder="Password" 
+                            <input className="form-control" type="password"  id="email" name="password" placeholder="Contraseña" 
                             value={store.password}
                             onChange={actions.handleChange}
 
@@ -38,8 +38,8 @@ const Login = props => {
                             <label className="login-field-icon fui-lock" for="login-pass"></label>
                         </div>
 
-                        <button className="btn btn-primary btn-large btn-block" href="">Login</button>
-                        <Link className="login-link" type="submit" to="/signup">Sign Up</Link>
+                        <button className="btn btn-primary btn-large btn-block" href="">Ingresar</button>
+                        <Link className="login-link" type="submit" to="/signup">Registrarse</Link>
                     </form>
                 </div>
             </div>
