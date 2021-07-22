@@ -1,18 +1,12 @@
-import React from 'react';
-import '../css/signup.css';
+import "../css/configuracion.css"
 
-
-const SignUp = () => {
+const Configuracion = () => {
     return (
-        <>
-            <div className="box">
-                <div className="logo">
-                    <h1>Easyt-app</h1>
-                </div>
-
-
-                <div className="container">
-                    <form className="row g-3">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="box">
+                    <form className="row g-3 my-5 mx-2">
                         <div className="col-6">
                             <label for="inputEmail4" className="form-label">Nombre</label>
                             <input type="text" className="form-control" id="inputName" />
@@ -48,29 +42,18 @@ const SignUp = () => {
                             <input type="phone" className="form-control" id="inputZip" />
                         </div>
                         <div className="col-12">
-                            <div className="form-check">
-                                <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                <label className="form-check-label" for="gridCheck">
-                                    Estoy de acuerdo
-                                </label>
-                            </div>
+                        
                         </div>
                         <div className="col-12">
                             <button type="submit" className="btn btn-primary">Registrarse</button>
                         </div>
                     </form>
 
-
-
-
-
+                    </div>
                 </div>
-
-
             </div>
-
-        </>
+        </div>
     )
 }
 
-export default SignUp;
+export default Configuracion;

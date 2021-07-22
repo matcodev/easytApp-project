@@ -12,6 +12,7 @@ import MasterRoute from "./layouts/master_layout";
 import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
 import Perfil from "./pages/Perfil";
+import Configuracion from "./pages/Configuracion";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <MasterRoute path="/clients" exact={true} component={Clients} />
           <MasterRoute path="/networks" exact={true} component={Networks} />
           <MasterRoute path="/perfil" exact={true} component={Perfil} />
+          <MasterRoute path="/configuracion" exact={true} component={Configuracion} />
           <Route path="/signup" exact={true} component={SignUp} />
           <Route path="/" exact={true} component={Login} />
         </div>

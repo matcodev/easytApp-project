@@ -22,10 +22,9 @@ const Login = props => {
                 
                     <form onSubmit={e => actions.login(e, props.history)}>
                         <div className="control-group">
-                            <input type="text" className="form-control" placeholder="Usuario" id="username" name="username" aria-label="default input example"
+                            <input type="text" className="form-control" placeholder="Nombre de usuario" id="username" name="username" aria-label="default input example"
                             value={store.username}
-                            onChange={actions.handleChange}
-                            />
+                            onChange={actions.handleChange}/>
                             <label className="login-field-icon fui-user" for="login-name"></label>
                         </div>
 

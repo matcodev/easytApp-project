@@ -37,9 +37,9 @@ const Navbar = () => {
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a className="dropdown-item" href="/perfil"><i className="fas fa-user me-2"/>Perfil</a></li>
-                        <li><a className="dropdown-item" href="/#"><i className="fas fa-cog me-2"/>Configuraciones</a></li>
+                        <li><a className="dropdown-item" href="/configuracion"><i className="fas fa-cog me-2"/>Configuraciones</a></li>
                         <li><hr className="dropdown-divider" /></li>
-                        <li><button className="dropdown-item"  onClick={() => actions.logout(history)}><i className="fas fa-sign-out-alt me-2"/>Log Out </button></li>
+                        <li><button className="dropdown-item"  onClick={() => actions.logout(history)}><i className="fas fa-sign-out-alt me-2"/>Cerrar sesión </button></li>
                     </ul>
                 </ul>
             </div>
