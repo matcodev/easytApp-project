@@ -1,6 +1,6 @@
 import "../css/signup.css"
 
-const SignUp = () => {
+const Signup = () => {
     return (
         <>
             <div className="box">
@@ -68,4 +68,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp;
+export default Signup;

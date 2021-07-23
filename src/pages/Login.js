@@ -20,8 +20,8 @@ const Login = () => {
                             <label className="login-field-icon fui-lock" for="login-pass"></label>
                         </div>
 
-                        <a className="btn btn-primary btn-large btn-block" href="">Login</a>
-                        <a className="login-link" href="/signup">Sign Up</a>
+                        <a className="btn btn-primary btn-large btn-block" href="">Ingresar</a>
+                        <a className="login-link" href="/signup">Registrarse</a>
                     </div>
                 </div>
             </div>

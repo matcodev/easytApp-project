@@ -1,21 +1,36 @@
 import React from 'react'
-import PieChartSales from '../components/sales/components/PieChartSales';
-import SalesChart from '../components/sales/components/SalesChart';
+// import PieChartSales from '../components/sales/components/PieChartSales';
+// import SalesChart from '../components/sales/components/SalesChart';
+import "../css/ingresos.css";
+
 
 const Sales = () => {
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1 className="pt-4">Ingresos</h1>
-      <div className="charts-sales mx-5 p-5">
-        <div className="card me-5 p-5">
-          <SalesChart />
+    <div className="ingresos h-100">
+            <h1>ingresos</h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                    <div className="col-1 border">1</div>
+                </div>
+                <div className="row">
+                    <div className="col-4 border">4</div>
+                    <div className="col-4 border">4</div>
+                    <div className="col-4 border">4</div>
+                </div>
+            </div>
         </div>
-        <div className="card me-4 px-3">
-          <PieChartSales />
-        </div>
-      </div>
-    </div>
   );
 }
 
