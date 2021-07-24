@@ -37,7 +37,7 @@ const Login = props => {
                             <label className="login-field-icon fui-lock" for="login-pass"></label>
                         </div>
 
-                        <button className="btn btn-primary btn-large btn-block" href="">Ingresar</button>
+                        <button className="btn btn-primary btn-large btn-block pl-5 boton" href="">Ingresar</button>
                         <Link className="login-link" type="submit" to="/signup">Registrarse</Link>
                     </form>
                 </div>

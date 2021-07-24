@@ -56,7 +56,7 @@ const SignUp = () => {
                             </div>
                         </div>
                         <div className="col-12">
-                            <button type="submit" className="btn btn-primary">Registrarse</button>
+                            <button type="submit" className="btn btn-primary boton">Registrarse</button>
                         </div>
                     </form>
 

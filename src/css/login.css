@@ -7,7 +7,7 @@
   }
   body {
   font-family: Arial;
-  background-color: #3498DB;
+  background-color: #12206d;
   /* padding: 50px; */
   }
   .login {
@@ -50,7 +50,7 @@
   box-shadow: none;
   }
   
-  /* .btn {
+  .boton {
     border: 2px solid transparent;
     background: #3498DB;
     color: #ffffff;
@@ -65,12 +65,12 @@
     display: block;
     width: 250px;
     margin: 0 auto;
-  } */
+  }
 
   
-  /* .btn:hover {
+  .boton {
     background-color: #2980B9;
-  } */
+  }
   
   .login-link {
     font-size: 20px;

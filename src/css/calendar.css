@@ -1,6 +1,19 @@
-.calendar {
+/* .calendar {
     background-color: aliceblue;
     display: flex;
     text-align: center;
     
+} */
+.agenda {
+    background-color: aliceblue;
+    width: 50rem;
+    height: 41rem;
+    
 }
+
+
+.calendar {
+    width: 1645px;
+    height: 895px;
+    background-color: #a4b7d4;
+  }

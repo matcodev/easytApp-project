@@ -1,4 +1,4 @@
-.img-ts{
+/* .img-ts{
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -33,4 +33,11 @@
     margin-left: 285px;
     margin-bottom: 250px;
     width: 50%;
-}
+} */
+
+.clientes {
+    width: 1645px;
+    height: 895px;
+    background-color: #a4b7d4;
+  }
+
