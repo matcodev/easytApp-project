@@ -29,11 +29,11 @@ const SignUp = () => {
                         </div>
                         <div className="col-7"> 
                         <label for="inputAddress2" className="form-label">Correo</label>
-                            <input type="text" className="form-control" placeholder="Ingresa Email" id="email" name="email"  />
+                            <input type="text" className="form-control" id="email" name="email"  />
                         </div>
                         <div className="col-md-5">
                             <label for="inputCity" className="form-label">Contraseña</label>
-                            <input className="form-control" type="password" id="contrasena" name="contrasena" placeholder="Contraseña" />
+                            <input className="form-control" type="password" id="contrasena" name="contrasena"  />
                         </div>
                         <div className="col-md-4">
                             <label for="inputZip" className="form-label">Teléfono</label>
