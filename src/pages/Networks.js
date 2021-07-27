@@ -1,35 +1,35 @@
+import { Link } from "react-router-dom";
 import "../css/networks.css";
 
 const Networks = () => {
-    return (
-        // <div>
-        //     <h1>Redes Sociales</h1>
-        //     <div className="btn-group" role="group" aria-label="Basic mixed styles example">
-        //         <button type="button" className="btn btn-primary">facebook</button>
-        //         <button type="button" className="btn btn-danger">Instagram</button>
-        //         <button type="button" className="btn btn-success">Gmail</button>
-        //     </div>
-        // </div>
-
-        <div className="redes">
+  return (
+    <div className="redes">
       <h1>Redes sociales</h1>
       <div className="container">
-        <div className="row">
-          <div className="col-3 border"><button type="button" className="btn btn-primary w-75">Facebook</button></div>
-          <div className="col-3 border"><button type="button" className="btn btn-danger w-75">Instagram</button></div>
-          <div className="col-3 border"><button type="button" className="btn btn-info w-75">Twitter</button></div>
-          <div className="col-3 border"><button type="button" className="btn btn-success w-75">E-mail</button></div>
-          
+        <div className="row my-5">
+          <div className="col-3 ">
+            <a href="https://es-la.facebook.com/" target="_blank" className="btn btn-primary w-75 rounded-pill"><i className="fab fa-facebook-f text-white fs-4 mx-3 rounded-pill" />Facebook</a>
+          </div>
+          <div className="col-3 ">
+            <a href="https://www.instagram.com/?hl=es" target="_blank" className="btn btn-danger w-75 rounded-pill"><i className="fab fa-instagram text-white fs-4 mx-3" />Instagram</a>
+          </div>
+          <div className="col-3 ">
+            <a href="https://twitter.com/?lang=es" target="_blank" className="btn btn-info w-75 rounded-pill"><i className="fab fa-twitter text-white fs-4 mx-3 text-primary" />Twitter</a>
+          </div>
+          <div className="col-3 ">
+            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank" className="btn btn-success w-75 rounded-pill"><i className="fas fa-envelope text-white fs-4 mx-3" />Gmail</a>
+          </div>
+
         </div>
         <div className="row">
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
+          <div className="col-4 "></div>
+          <div className="col-4 "></div>
+          <div className="col-4 "></div>
         </div>
       </div>
 
     </div>
-    );
+  );
 }
 
 export default Networks;

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/perfil.css'
+import { Link } from "react-router-dom";
+import '../css/perfil.css';
 
 const Perfil = () => {
   return (
@@ -7,12 +8,12 @@ const Perfil = () => {
       <h1>Perfil</h1>
       <div className="container">
         <div className="row">
-          <div className="col-12 border">12
+          <div className="col-12 border">
 
-            <div className="card" style={{ maxWidth: "540px" }}>
+            {/* <div className="card" style={{ maxWidth: "540px" }}>
               <div className="row g-0">
                 <div className="col-md-4">
-                  <img src="https://i.pinimg.com/564x/27/28/de/2728dedb1641c748143b7849dd6433af.jpg" /* style={ {borderRadius : "120px"} } */ className="img-fluid rounded-start" alt="..." />
+                  <img src="https://i.pinimg.com/564x/27/28/de/2728dedb1641c748143b7849dd6433af.jpg" className="img-fluid rounded-start" alt="..." />
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
@@ -22,6 +23,23 @@ const Perfil = () => {
                   </div>
                 </div>
               </div>
+            </div> */}
+
+
+
+            <div className="carta">
+              <div className="carta-img">
+                <img src="https://wallpaperaccess.com/full/153.jpg"></img>
+              </div>
+              <div className="perfil-img">
+                <img src="https://64.media.tumblr.com/fca81cd0ffc891a2c39da882c6f7d161/72b889ad881e1f1c-54/s1280x1920/e6c34c7a64d94b2211c69f5ff80155039d1e9ef7.jpg"></img>
+              </div>
+              <div className="carta-contenido">
+                <h3>Jhon Sanchez</h3>
+                <p> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+              </div>
+              
+
             </div>
 
 
