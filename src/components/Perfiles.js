@@ -4,7 +4,7 @@ export default function Perfiles(props) {
     return (
 
 
-        <div className='container-fluid'>
+        <div className='container'>
             <div class="tarjet-info card " >
             <img src={props.imagen} class="card-img-top img-ts"/>
                 <div class="card-body">

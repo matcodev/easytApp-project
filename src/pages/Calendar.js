@@ -57,9 +57,9 @@ const Calendar = () => {
       <h1>Agenda</h1>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-6">
 
-            <div className="agenda"   >
+            <div className="agenda w-100"   >
               <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="dayGridMonth"
@@ -82,11 +82,119 @@ const Calendar = () => {
 
           </div>
 
+          <div className="col-6">
+            <div className="container">
+              <div className="row">
+                <div className="col-6">
+
+                  <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="col-6">
+
+                <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-6">
+                
+                <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div className="col-6">
+                
+                <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-6">
+                
+                <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="col-6">
+                
+                <div className="card text-dark bg-info mb-3">
+                    <div className="card-header">Header</div>
+                    <div className="card-body">
+                      <div className="card">
+                        <ul className="list-group list-group-flush">
+                          <li className="list-group-item">Hora:</li>
+                          <li className="list-group-item">Servicio:</li>
+                          <li className="list-group-item">Valor:</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div className="row">
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
+          <div className="col-4">4</div>
+          <div className="col-4">4</div>
+          <div className="col-4">4</div>
         </div>
       </div>
 

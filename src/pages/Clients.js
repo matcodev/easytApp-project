@@ -32,8 +32,21 @@ function Clients() {
         <h1>Clientes</h1>
         <div className="container">
           <div className="row">
-            <div className="col-12 border">12</div>
+            <div className="col-6 border">6
+
+              <Table
+                nombre='Alexis'
+                apellido='Sanchez'
+                correo='jmtm89'
+              />
+
+            </div>
+            <div className="col-6 border">6
             
+            
+            
+            </div>
+
           </div>
           <div className="row">
             <div className="col-4 border">4</div>

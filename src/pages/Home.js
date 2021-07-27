@@ -20,22 +20,22 @@ import { render } from "react-dom";
 
 const Home = () => {
   React.state = { fecha: new Date() };
-  const {store, actions} = useContext(Context)
+  const { store, actions } = useContext(Context)
 
 
-const mostrar = () =>{
+  const mostrar = () => {
 
-   swal({
+    swal({
       title: 'Nombre del Cliente',
       text: 'Tipo de servicio solicitado',
-      buttons: ["si","no"]
-   });
-}
+      buttons: ["si", "no"]
+    });
+  }
 
   // const onChange = fecha =>{
   //   React.setState({fecha : fecha});
   // }
-  
+
   return (
     // <div className="container">
     //   <div className="end">
@@ -48,7 +48,7 @@ const mostrar = () =>{
     //     <Col xl={5} className="mt-5">
     //       <Card className="card text-center">
     //         <Card.Header>
-    //           <i class="fas fa-user-clock"></i> Cliente pendiente - Hoy
+    //           <i className="fas fa-user-clock"></i> Cliente pendiente - Hoy
     //         </Card.Header>
     //         <Card.Body className="mt-1">
     //           <Card.Title>Magnus Carlsen</Card.Title>
@@ -74,7 +74,7 @@ const mostrar = () =>{
     //     <Col xl={5} className="mt-5">
     //       <Card className="card text-center">
     //         <Card.Header>
-    //           <i class="fas fa-user-clock"></i> Cliente pendiente - Hoy
+    //           <i className="fas fa-user-clock"></i> Cliente pendiente - Hoy
     //         </Card.Header>
     //         <Card.Body className="mt-1">
     //           <Card.Title>Special title treatment</Card.Title>
@@ -101,7 +101,7 @@ const mostrar = () =>{
     //     <Col xl={5} className="mt-5">
     //       <Card className="card text-center">
     //         <Card.Header>
-    //           <i class="fas fa-money-check-alt"></i> Ingreso actual de la semana
+    //           <i className="fas fa-money-check-alt"></i> Ingreso actual de la semana
     //         </Card.Header>
     //         <Card.Body className="mt-1">
     //           <Card.Title>Special title treatment</Card.Title>
@@ -128,7 +128,7 @@ const mostrar = () =>{
     //     <Col xl={5} className="mt-5">
     //       <Card className="card text-center">
     //         <Card.Header>
-    //           <i class="fas fa-crown"></i> Cliente de la semana{" "}
+    //           <i className="fas fa-crown"></i> Cliente de la semana{" "}
     //         </Card.Header>
     //         <Card.Body className="mt-1">
     //           <Card.Title>Special title treatment</Card.Title>
@@ -156,14 +156,78 @@ const mostrar = () =>{
     <div className="home">
       <h1>Inicio</h1>
       <div className="container">
+        {/* <div className="row">
+          <div className="col-12 ">12</div>
+        </div> */}
+
         <div className="row">
-          <div className="col-12 border">12</div>
-          
+          <div className="col-4 ">
+
+            <div className="card text-center ">
+              <div className="card-header">
+                Próximo cliente
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">Special title treatment</h5>
+                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div className="card-footer text-muted">
+                <a href="/calendar" className="btn btn-primary">Ir a agenda</a>
+              </div>
+            </div>
+
+          </div>
+          <div className="col-4 ">
+
+            <div className="card text-center ">
+              <div className="card-header">
+                Ingreso del día
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">Special title treatment</h5>
+                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div className="card-footer text-muted">
+                <a href="/sales" className="btn btn-primary">Ir a ingresos</a>
+              </div>
+            </div>
+
+          </div>
+          <div className="col-4 ">
+
+            <div className="card text-center">
+              <div className="card-header">
+                Último cliente
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">Special title treatment</h5>
+                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div className="card-footer text-muted">
+                <a href="/clients" className="btn btn-primary">Ir a clientes</a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
         <div className="row">
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
-          <div className="col-4 border">4</div>
+          <div className="col-4 ">4</div>
+          <div className="col-4 ">4
+
+            <div className="card mt-5">
+              <div className="card-header">
+                Comparte este enlace para que agenden contigo
+              </div>
+              <div className="card-body">
+                
+                  <p>(Enlace)</p>
+                  
+              </div>
+            </div>
+
+          </div>
+          <div className="col-4 ">4</div>
         </div>
       </div>
 
