@@ -1,9 +1,22 @@
+import { useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { Context } from "../store/appContext";
 import maty_profile2 from '../assets/img/maty_profile2.jpeg';
+import Button from "../components/Button";
+
 
 const Navbar = () => {
+    const { store, actions } = useContext(Context);
+
+    const history = useHistory()
+
     return (
+        
         <nav className="navbar navbar-light bg-light">
             <h1><i className="far fa-calendar-check me-2" />EasytApp</h1>
+            {store.currentUser !== null ? (
+            <>
+
             <div className="col-md-2">
                 <form className="d-flex">
                     <input className="form-control" type="search" placeholder="Buscar" aria-label="Search" />
@@ -12,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className="icon-notification col-md-6 d-flex align-items-center justify-content-end">
                 <h5 className="float-end me-4">
-                    <i className="fas fa-bell text-secondary" />
+                  <button><Button>  <i className="fas fa-bell text-secondary" /></Button></button>
                     <i className="fas fa-envelope text-secondary mx-4" />
                 </h5>
             </div>
@@ -20,16 +33,21 @@ const Navbar = () => {
                 <img src={maty_profile2} alt="no image" className="imgProfile" />
                 <ul className="nav-item dropdown float-end">
                     <a className="nav-link dropdown-toggle text-secondary" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Matías Espinoza
+                    {store.currentUser.user.primerNombre + " " + store.currentUser.user.apellidoPaterno}
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="/#"><i className="fas fa-user me-2"/>Perfil</a></li>
-                        <li><a className="dropdown-item" href="/#"><i className="fas fa-cog me-2"/>Configuraciones</a></li>
+                        <li><a className="dropdown-item" href="/perfil"><i className="fas fa-user me-2"/>Perfil</a></li>
+                        <li><a className="dropdown-item" href="/configuracion"><i className="fas fa-cog me-2"/>Configuraciones</a></li>
                         <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="/#"><i className="fas fa-sign-out-alt me-2"/>Log Out</a></li>
+                        <li><button className="dropdown-item"  onClick={() => actions.logout(history)}><i className="fas fa-sign-out-alt me-2"/>Cerrar sesión </button></li>
                     </ul>
                 </ul>
             </div>
+
+
+            </>
+            ) : null}
+
         </nav>
     );
 }

@@ -1,0 +1,28 @@
+/* .calendar {
+    background-color: aliceblue;
+    display: flex;
+    text-align: center;
+    
+} */
+.agenda {
+    background-color: aliceblue;
+    width: 50rem;
+    height: 38rem;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 20px;
+    margin-top: 40px;
+    
+}
+
+
+.calendar {
+    width: 1645px;
+    height: 895px;
+    background-color: #dceaff;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .card {
+      border-radius: 20px;
+
+  }
