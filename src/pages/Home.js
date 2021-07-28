@@ -154,7 +154,8 @@ const Home = () => {
 
 
     <div className="home">
-      <h1 className="px-3">Inicio</h1>
+      <h1 className="px-3">Agenda de {store.currentUser.user.primerNombre + " " + store.currentUser.user.apellidoPaterno} <DatePicker selected={React.state.fecha} />{" "}</h1>
+      
       <div className="container">
         {/* <div className="row">
           <div className="col-12 ">12</div>

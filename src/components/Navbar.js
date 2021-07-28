@@ -33,7 +33,7 @@ const Navbar = () => {
                 <img src={maty_profile2} alt="no image" className="imgProfile" />
                 <ul className="nav-item dropdown float-end">
                     <a className="nav-link dropdown-toggle text-secondary" href="/#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Matías Espinoza
+                    {store.currentUser.user.primerNombre + " " + store.currentUser.user.apellidoPaterno}
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a className="dropdown-item" href="/perfil"><i className="fas fa-user me-2"/>Perfil</a></li>

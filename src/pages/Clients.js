@@ -1,65 +1,65 @@
 
-import React from "react"
+import React, { useContext, useEffect } from "react"
+import { Context } from "../store/appContext";
+
 import '../css/clients.css';
-import Perfiles from "../components/Perfiles"
-import juanma from "../assets/img/juanma.jpg";
-import Table from "../components/Table";
 
 function Clients() {
 
+  const {store, actions} = useContext(Context);
+  const {usuarios} = store;
+
+  useEffect(() => {
+    actions.getUsuarios("/clientes");
+  }, [])
 
   return (
     <>
+      <table className="table">
+        <thead>
+          <tr>
+            <th className="text-center" scope="col">
+              Primer Nombre
+            </th>
+            <th className="text-center" scope="col">
+              Segundo Nombre
+            </th>
+            <th className="text-center" scope="col">
+              Apellido Paterno
+            </th>
+            <th className="text-center" scope="col">
+              Apellido Materno
+            </th>
+            <th className="text-center" scope="col">
+              Correo
+            </th>
+            <th className="text-center" scope="col">
+              Acciones
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {!!usuarios &&
+            usuarios.length > 0 &&
+            usuarios.map((usuario, index) => {
+              return (
+                <tr key={index}>
+                  <td className="text-center"> {usuario.primerNombre}</td>
+                  <td className="text-center">{usuario.segundoNombre}</td>
+                  <td className="text-center">{usuario.apellidoPaterno}</td>
+                  <td className="text-center">{usuario.apellidoMaterno}</td>
+                  <td className="text-center">{usuario.email}</td>
 
-      {/* <Table
-            nombre='Alexis'
-            apellido='Sanchez'
-            correo='jmtm89'
-          />
-      <div className='container-fluid  '>
-        <Perfiles
-          imagen={juanma}
-          nombre='Alexis Sanchez'
-        />
-
-
-      </div> */}
-
-
-
-
-      <div className="clientes">
-        <h1 className="px-3">Clientes</h1>
-        <div className="container">
-          <div className="row">
-            <div className="col-6 border">6
-
-              <Table
-                nombre='Alexis'
-                apellido='Sanchez'
-                correo='jmtm89'
-              />
-
-            </div>
-            <div className="col-6 border">6
-            
-            
-            
-            </div>
-
-          </div>
-          <div className="row">
-            <div className="col-4 border">4</div>
-            <div className="col-4 border">4</div>
-            <div className="col-4 border">4</div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
+                  <td className="text-center">
+                    <button className="trash-icon border-0 bg-transparent text-danger">
+                      <i className="far fa-trash-alt "></i>
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+        </tbody>
+      </table>
     </>
   );
 }

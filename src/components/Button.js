@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Context } from '../store/appContext';
 
-const Button = () => {
+const Button = props => {
+
+  const { store, actions } = useContext(Context);
+
+  const history = useHistory()
+
     return (
         <>
             <button type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -17,27 +24,41 @@ const Button = () => {
                         <div className="modal-body">
 
 
-                            <form className="row g-3">
+                            <form onSubmit={e => actions.agendar(e, props.history)} className="row g-3">
                                 <div className="col-md-6">
-                                    <label for="inputEmail4" className="form-label">Nombre</label>
-                                    <input type="email" className="form-control" id="primerNombre" name="primerNombre" />
+                                    <label for="text" className="form-label">Nombre</label>
+                                    <input type="text" className="form-control" id="primerNombre" name="primerNombre" 
+                                     value={store.primerNombre}
+                                     onChange={actions.handleChange}
+                                    />
                                 </div>
                                 <div className="col-md-6">
                                     <label for="inputPassword4" className="form-label">Apellido</label>
-                                    <input type="password" className="form-control" id="apellidoPaterno" name="apellidoPaterno" />
+                                    <input type="text" className="form-control" id="apellidoPaterno" name="apellidoPaterno" 
+                                    value={store.apellidoPaterno}
+                                    onChange={actions.handleChange}
+                                    />
                                 </div>
                                 <div className="col-6">
-                                    <label for="inputAddress2" className="form-label">Rut</label>
-                                    <input type="text" className="form-control" id="" placeholder="" />
+                                    <label for="inputAddress2" className="form-label">Segundo apellido</label>
+                                    <input type="text" className="form-control" id="apellidoMaterno" name="apellidoMaterno" placeholder="" 
+                                    value={store.apellidoMaterno}
+                                    onChange={actions.handleChange}
+                                    />
                                 </div>
                                 <div className="col-6">
                                     <label for="inputAddress2" className="form-label">Teléfono</label>
-                                    <input type="text" className="form-control" id="fono" name="fono" placeholder="" />
+                                    <input type="text" className="form-control" id="fono" name="fono" placeholder="" 
+                                    value={store.fono}
+                                    onChange={actions.handleChange}
+                                    />
                                 </div>
 
                                 <div className="col-12">
                                     <label for="inputAddress" className="form-label">Correo</label>
-                                    <input type="text" className="form-control" id="email" name="email" placeholder="" />
+                                    <input type="text" className="form-control" id="email" name="email" placeholder="" 
+                                    value={store.email}
+                                    onChange={actions.handleChange}/>
                                 </div>
                                 <div className="col-md-6">
                                     <label for="inputCity" className="form-label">Fecha</label>
@@ -47,26 +68,14 @@ const Button = () => {
                                     <label for="" className="form-label">Hora</label>
                                     <input type="time" className="form-control" id="time" />
                                 </div>
-                                <div className="col-md-6">
-                                    <label for="inputState" className="form-label">Servicio</label>
-                                    <select id="inputState" className="form-select">
-                                        <option selected></option>
-                                        <option>Servicio1</option>
-                                        <option>Servicio2</option>
-                                        <option>Servicio3</option>
-                                    </select>
-                                </div>
-                                <div className="col-6">
-                                    <label for="inputAddress2" className="form-label">Código de amigo</label>
-                                    <input type="text" className="form-control" id="" placeholder="" />
-                                </div>
+                               
                                 <div className="col-12">
                                     <label htmlFor="">Comentarios</label>
                                     <textarea className="form-control" id="" cols="30" rows="3"></textarea>
                                 </div>
 
                                 <div className="col-12">
-                                    <button type="submit" className="btn btn-primary">Reservar</button>
+                                    <button type="submit"  className="btn btn-primary">Reservar</button>
                                 </div>
                             </form>
 
