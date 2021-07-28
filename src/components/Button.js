@@ -20,11 +20,11 @@ const Button = () => {
                             <form className="row g-3">
                                 <div className="col-md-6">
                                     <label for="inputEmail4" className="form-label">Nombre</label>
-                                    <input type="email" className="form-control" id="" />
+                                    <input type="email" className="form-control" id="primerNombre" name="primerNombre" />
                                 </div>
                                 <div className="col-md-6">
                                     <label for="inputPassword4" className="form-label">Apellido</label>
-                                    <input type="password" className="form-control" id="" />
+                                    <input type="password" className="form-control" id="apellidoPaterno" name="apellidoPaterno" />
                                 </div>
                                 <div className="col-6">
                                     <label for="inputAddress2" className="form-label">Rut</label>
@@ -32,12 +32,12 @@ const Button = () => {
                                 </div>
                                 <div className="col-6">
                                     <label for="inputAddress2" className="form-label">Teléfono</label>
-                                    <input type="text" className="form-control" id="" placeholder="" />
+                                    <input type="text" className="form-control" id="fono" name="fono" placeholder="" />
                                 </div>
 
                                 <div className="col-12">
                                     <label for="inputAddress" className="form-label">Correo</label>
-                                    <input type="text" className="form-control" id="" placeholder="" />
+                                    <input type="text" className="form-control" id="email" name="email" placeholder="" />
                                 </div>
                                 <div className="col-md-6">
                                     <label for="inputCity" className="form-label">Fecha</label>
@@ -57,7 +57,7 @@ const Button = () => {
                                     </select>
                                 </div>
                                 <div className="col-6">
-                                    <label for="inputAddress2" className="form-label">Codigo de amigo</label>
+                                    <label for="inputAddress2" className="form-label">Código de amigo</label>
                                     <input type="text" className="form-control" id="" placeholder="" />
                                 </div>
                                 <div className="col-12">
@@ -69,7 +69,6 @@ const Button = () => {
                                     <button type="submit" className="btn btn-primary">Reservar</button>
                                 </div>
                             </form>
-
 
                         </div>
                         <div className="modal-footer">

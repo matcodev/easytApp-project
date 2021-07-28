@@ -7,31 +7,39 @@ import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import Calendar from "./pages/Calendar";
 import Networks from "./pages/Networks";
+import injectContext from "./store/appContext";
+import MasterRoute from "./layouts/master_layout";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import SignUp from "./pages/Signup";
+import Perfil from "./pages/Perfil";
+import Configuracion from "./pages/Configuracion";
 
 
 function App() {
   return (
+    <div>
     <BrowserRouter>
+    <MasterRoute component={Navbar} />
       <switch>
-        <Navbar />
-        <div className="flex">
-          <Sidebar />
-          <div className="content">
-            <Route path="/Home" exact={true} component={Home} />
-            <Route path="/Calendar" exact={true} component={Calendar} />
-            <Route path="/Sales" exact={true} component={Sales} />
-            <Route path="/Clients" exact={true} component={Clients} />
-            <Route path="/Networks" exact={true} component={Networks} />
-            <Route path="/signup" exact={true} component={Signup} />
-            <Route path="/" exact={true} component={Login} />
-          </div>
+      <div className="flex">
+      <MasterRoute component={Sidebar} />
+        <div className="content">
+          
+          <MasterRoute path="/home" exact={true} component={Home} />
+          <MasterRoute path="/calendar" exact={true} component={Calendar} />
+          <MasterRoute path="/sales" exact={true} component={Sales} />
+          <MasterRoute path="/clients" exact={true} component={Clients} />
+          <MasterRoute path="/networks" exact={true} component={Networks} />
+          <MasterRoute path="/perfil" exact={true} component={Perfil} />
+          <MasterRoute path="/configuracion" exact={true} component={Configuracion} />
+          <Route path="/signup" exact={true} component={SignUp} />
+          <Route path="/" exact={true} component={Login} />
         </div>
-
+      </div>
       </switch>
     </BrowserRouter>
+    </div>
   );
 }
 
-export default App;
+export default injectContext(App);
