@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import '../css/perfil.css';
+import { Context } from '../store/appContext';
 
 const Perfil = () => {
+
+  const { store, actions } = useContext(Context);
+
+   
+
   return (
     <div className="perfil">
-      <h1 className="px-3">Perfil</h1>
+      <h1 className="px-3" > Perfil</h1>
       <div className="container">
         <div className="row">
           <div className="col-12 border">
@@ -37,8 +43,10 @@ const Perfil = () => {
                 <img src="https://64.media.tumblr.com/fca81cd0ffc891a2c39da882c6f7d161/72b889ad881e1f1c-54/s1280x1920/e6c34c7a64d94b2211c69f5ff80155039d1e9ef7.jpg"></img>
               </div>
               <div className="carta-contenido">
-                <h3>Jhon Sanchez</h3>
-                <p> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+                <h3>{store.currentUser.user.primerNombre + " " + store.currentUser.user.apellidoPaterno}</h3>
+                <p> Con mas de 7 años de experiencia en servicio, cuento con espacio disponible en Av. Manuel Antonio Matta #02127.
+                  Si busca un servicio epecial, atraves del contacto puedes solicitarlo. 
+                </p>
               </div>
 
 
