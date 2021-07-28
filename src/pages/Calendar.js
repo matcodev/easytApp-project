@@ -54,12 +54,12 @@ const Calendar = () => {
 
 
     <div className="calendar">
-      <h1>Agenda</h1>
+      <h1 className="px-3">Agenda</h1>
       <div className="container">
         <div className="row">
           <div className="col-6">
 
-            <div className="agenda w-100"   >
+            <div className="agenda w-100 shadow-lg border-dark border-3"   >
               <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                 initialView="dayGridMonth"
@@ -84,10 +84,11 @@ const Calendar = () => {
 
           <div className="col-6">
             <div className="container">
+              <h3>Próximas reservas:</h3>
               <div className="row">
                 <div className="col-6">
 
-                  <div className="card text-dark bg-info mb-3">
+                  <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3 ">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -103,7 +104,7 @@ const Calendar = () => {
                 </div>
                 <div className="col-6">
 
-                <div className="card text-dark bg-info mb-3">
+                <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -121,7 +122,7 @@ const Calendar = () => {
               <div className="row">
                 <div className="col-6">
                 
-                <div className="card text-dark bg-info mb-3">
+                <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -138,7 +139,7 @@ const Calendar = () => {
                 </div>
                 <div className="col-6">
                 
-                <div className="card text-dark bg-info mb-3">
+                <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -156,7 +157,7 @@ const Calendar = () => {
               <div className="row">
                 <div className="col-6">
                 
-                <div className="card text-dark bg-info mb-3">
+                <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -172,7 +173,7 @@ const Calendar = () => {
                 </div>
                 <div className="col-6">
                 
-                <div className="card text-dark bg-info mb-3">
+                <div className="card text-dark bg-info mb-3 shadow-lg border-dark border-3">
                     <div className="card-header">Header</div>
                     <div className="card-body">
                       <div className="card">
@@ -192,9 +193,9 @@ const Calendar = () => {
 
         </div>
         <div className="row">
-          <div className="col-4">4</div>
-          <div className="col-4">4</div>
-          <div className="col-4">4</div>
+          <div className="col-4"></div>
+          <div className="col-4"></div>
+          <div className="col-4"></div>
         </div>
       </div>
 

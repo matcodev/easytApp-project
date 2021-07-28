@@ -8,12 +8,12 @@ const Sales = () => {
 
   return (
     <div className="ingresos">
-      <h1>Ingresos</h1>
+      <h1 className="px-3">Ingresos</h1>
       <div className="container">
         <div className="row">
-          <div className="col-12 border">
+          <div className="col-12 ">
 
-            <div className="bg-light w-50">
+            <div className="grafico bg-light w-50 shadow-lg">
               <SalesChart />
             </div>
             {/* <div className="bg-light w-50">
@@ -24,9 +24,9 @@ const Sales = () => {
 
         </div>
         <div className="row">
-          <div className="col-4 border">
+          <div className="col-4">
 
-            <div className="card text-dark bg-light mb-3 mt-5">
+            <div className="card text-dark bg-light mb-3 mt-5 shadow-lg border-dark border-3">
               <div className="card-header">Header</div>
               <div className="card-body">
                 <h5 className="card-title">Light card title</h5>
@@ -35,9 +35,9 @@ const Sales = () => {
             </div>
 
           </div>
-          <div className="col-4 border">
+          <div className="col-4">
           
-          <div className="card text-dark bg-light mb-3 mt-5">
+          <div className="card text-dark bg-light mb-3 mt-5 shadow-lg border-dark border-3">
               <div className="card-header">Header</div>
               <div className="card-body">
                 <h5 className="card-title">Light card title</h5>
@@ -46,9 +46,9 @@ const Sales = () => {
             </div>
           
           </div>
-          <div className="col-4 border">
+          <div className="col-4">
           
-          <div className="card text-dark bg-light mb-3 mt-5">
+          <div className="card text-dark bg-light mb-3 mt-5 shadow-lg border-dark border-3">
               <div className="card-header">Header</div>
               <div className="card-body">
                 <h5 className="card-title">Light card title</h5>

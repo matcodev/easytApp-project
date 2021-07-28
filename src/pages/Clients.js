@@ -29,7 +29,7 @@ function Clients() {
 
 
       <div className="clientes">
-        <h1>Clientes</h1>
+        <h1 className="px-3">Clientes</h1>
         <div className="container">
           <div className="row">
             <div className="col-6 border">6

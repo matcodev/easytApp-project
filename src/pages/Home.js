@@ -154,7 +154,7 @@ const Home = () => {
 
 
     <div className="home">
-      <h1>Inicio</h1>
+      <h1 className="px-3">Inicio</h1>
       <div className="container">
         {/* <div className="row">
           <div className="col-12 ">12</div>
@@ -163,7 +163,7 @@ const Home = () => {
         <div className="row">
           <div className="col-4 ">
 
-            <div className="card text-center ">
+            <div className="card text-center shadow-lg border-dark border-3">
               <div className="card-header">
                 Próximo cliente
               </div>
@@ -179,7 +179,7 @@ const Home = () => {
           </div>
           <div className="col-4 ">
 
-            <div className="card text-center ">
+            <div className="card text-center shadow-lg border-dark border-3">
               <div className="card-header">
                 Ingreso del día
               </div>
@@ -195,7 +195,7 @@ const Home = () => {
           </div>
           <div className="col-4 ">
 
-            <div className="card text-center">
+            <div className="card text-center shadow-lg border-dark border-3">
               <div className="card-header">
                 Último cliente
               </div>
@@ -212,22 +212,22 @@ const Home = () => {
 
         </div>
         <div className="row">
-          <div className="col-4 ">4</div>
-          <div className="col-4 ">4
+          <div className="col-4 "></div>
 
-            <div className="card mt-5">
+
+          <div className="col-4 ">
+            <div className="card mt-5 shadow-lg border-dark border-3">
               <div className="card-header">
                 Comparte este enlace para que agenden contigo
               </div>
               <div className="card-body">
-                
                   <p>(Enlace)</p>
-                  
               </div>
             </div>
-
           </div>
-          <div className="col-4 ">4</div>
+
+
+          <div className="col-4 "></div>
         </div>
       </div>
 

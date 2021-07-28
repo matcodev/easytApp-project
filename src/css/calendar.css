@@ -7,8 +7,10 @@
 .agenda {
     background-color: aliceblue;
     width: 50rem;
-    height: 41rem;
+    height: 38rem;
     font-family: 'Rubik', sans-serif;
+    border-radius: 20px;
+    margin-top: 40px;
     
 }
 
@@ -16,6 +18,11 @@
 .calendar {
     width: 1645px;
     height: 895px;
-    background-color: #a4b7d4;
+    background-color: #dceaff;
     font-family: 'Rubik', sans-serif;
+  }
+
+  .card {
+      border-radius: 20px;
+
   }
